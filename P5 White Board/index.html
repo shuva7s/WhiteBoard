@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Whiteboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="canvasContainer">
+        <canvas id="canvas"></canvas>
+        <div class="buttons">
+            <button class="btn active" id="black"><i class="fa-solid fa-pencil fa-lg"></i></button>
+            <button class="btn" id="yellow" style="color: gold;"><i class="fa-solid fa-pencil fa-lg"></i></button>
+            <button class="btn" id="green" style="color: #00ff00;"><i class="fa-solid fa-pencil fa-lg"></i></button>
+            <button class="btn" id="cyan" style="color: cyan;"><i class="fa-solid fa-pencil fa-lg"></i></button>
+            <button class="btn" id="blue" style="color: #0044ff;"><i class="fa-solid fa-pencil fa-lg"></i></button>
+            <button class="btn" id="magenta" style="color: magenta;"><i class="fa-solid fa-pencil fa-lg"></i></button>
+            <button class="btn" id="red" style="color: #ff0000;"><i class="fa-solid fa-pencil fa-lg"></i></button>
+            <button class="btn" id="eraser" style="color: white;"><i class="fa-solid fa-eraser fa-xl"
+                    style="color: rgb(185, 185, 185);"></i></button>
+            <button class="btn" id="refresh"><i class="fa-solid fa-rotate-right fa-xl"
+                    style="color: gray;"></i></button>
+        </div>
+    </section>
+
+    <section class="slider-container">
+        <input type="range" id="valueSlider" min="1" max="30" step="1" value="2">
+        <p id="currentValue">Width: 2</p>
+    </section>
+
+    <script src="logic.js"></script>
+</body>
+
+</html>
